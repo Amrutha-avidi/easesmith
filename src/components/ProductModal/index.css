@@ -10,6 +10,7 @@
     position: relative;
     outline: none;
   }
+  
   .modal-con{
     display: flex;
     flex-direction: column;
@@ -35,7 +36,7 @@
     height: auto;
     margin: 15px 0;
   }
-  
+ 
   /* Price Styling */
   .price {
     font-size: 24px;
@@ -54,7 +55,20 @@
     gap:50px;
     margin-top: 20px;
   }
-  
+  @media screen and (max-width:768px){
+    .custom-modal-content{
+      width: 300px;
+      padding: 10px;
+    }.product-img {
+      width: 50%;
+      height: 200px;
+      margin: 15px 0;
+    }.price{
+      font-size: 20px;
+    }.modal-buttons{
+      gap:30px
+    }
+  }
   /* Confirm Button */
   .confirm-btn {
     background-color: #28a745;

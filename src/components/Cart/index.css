@@ -14,7 +14,7 @@
     border: 1px solid;
     padding: 30px 20px;
     text-align: center;
-    gap:20px
+    gap: 20px
 }
 
 .cart-head {
@@ -27,7 +27,8 @@
 }
 
 .cart-para {
-    font-size: 18px;    color: #165315;
+    font-size: 18px;
+    color: #165315;
 
 }
 
@@ -36,4 +37,26 @@
     color: white;
     padding: 10px 20px;
     border: 0;
+}
+
+@media screen and (max-width:768px) {
+    .cart {
+        padding: 40px;
+        height: 70vh;
+    }
+
+    .cart-con {
+        padding: 20px 10px;
+        gap: 15px
+    }
+
+    .cart-head {
+        font-size: 17px;
+    }
+
+    .cart-para {
+        font-size: 15px;
+    }.congo{
+        font-size: 25px;
+    }
 }

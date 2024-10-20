@@ -10,7 +10,7 @@ const Cart = () => {
                     <p className='cart-head'>Your Cart</p>
                     <hr />
                 </div>
-                <h1>Congratulations <br /> Order Placed!</h1>
+                <h1 className='congo'>Congratulations <br /> Order Placed!</h1>
                 <img src='https://res.cloudinary.com/drpddho9b/image/upload/v1729356492/plant_1_qekpzr.png' alt='pot' />
                 <p className='cart-para'>Thank you for choosing Chaperone services. <br />
                     We will soon get in touch with you!</p>
