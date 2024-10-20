@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# EaseSmith
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EaseSmith is a React-based web application designed to provide a seamless and responsive user experience. The app leverages various libraries, including `react-icons` for icons, `axios` for API calls, `react-slick` for carousels, and `react-router-dom` for routing.
 
-## Available Scripts
+## Project Setup
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Ensure you have the following tools installed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Node.js** (>= 14.x recommended)
+- **npm** or **yarn** (npm comes with Node.js)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. **Clone the repository**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-repo/easesmith.git
+   cd easesmith
+   ```
 
-### `npm run build`
+2. **Install dependencies**:
+   npm install
+3. **Starting Apllication**:
+   npm start
+4. **Dependencies**
+   This project relies on the following key dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React (18.3.1): A JavaScript library for building user interfaces.
+React Icons (^5.3.0): A collection of icons for React.
+React Router DOM (^6.27.0): Declarative routing for React.
+React Slick (^0.30.2): A carousel component for React.
+Slick Carousel (^1.8.1): The core carousel functionality for React Slick.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.**Folder Structure**
+.
+├── public/
+│ └── index.html # HTML template for the app
+├── src/
+│ ├── components/ # Reusable components
+│ ├── context/ # Global context for state management
+│ ├── styles/ # CSS and styling files
+│ ├── App.js # Main App component
+│ ├── index.js # Entry point for React
+│ └── ... # Other app logic
+├── README.md # Project documentation
+├── package.json # Project metadata and dependencies
+└── ... # Other configuration files
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6 **Browser Support**
+This project supports modern browsers, with the following targets specified in the browserslist:
+For production: Browsers with > 0.2% market share, excluding those marked as "dead."
+For development: The latest versions of Chrome, Firefox, and Safari.
