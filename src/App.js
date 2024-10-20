@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { GlobalProvider } from './context/GlobalContext';
+import Header from './components/Header';
+import ProductList from './components/ProductList';
+import ViewProductPage from './components/ViewProductPage';
+import ProductModal from './components/ProductModal';
+import Cart from './components/Cart';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ProductList />} />
+          <Route path="/product/:id" element={<ViewProductPage />} />
+          <Route path="/cart" element={<Cart />} />
+
+        </Routes>
+        <ProductModal />
+      </Router>
+    </GlobalProvider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,14 @@
+/* .pagination-con{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+} */
+
+.view-more-btn{
+    color: white;
+    background-color: #165315;
+    border-radius: 50px;
+    border:0;
+    padding: 10px 30px;
+}
